@@ -2,7 +2,7 @@ import { world, system, MolangVariableMap } from "@minecraft/server";
 
 system.runInterval(() => {
     for (const player of world.getPlayers()) {
-        if (!player.isSprinting) continue;
+        if (!player.isSprinting || player.isInWater) continue;
         
         // Ground check: is there a block immediately below the player?
         const blockBelow = player.dimension.getBlock({ 
@@ -11,7 +11,7 @@ system.runInterval(() => {
             z: player.location.z 
         });
         
-        if (!blockBelow || blockBelow.isAir) continue;
+        if (!blockBelow || blockBelow.isAir || blockBelow.typeId === "minecraft:water") continue;
 
         // Sparse check: only spawn every few ticks for dust-like feel
         if (system.currentTick % 2 !== 0) continue;
