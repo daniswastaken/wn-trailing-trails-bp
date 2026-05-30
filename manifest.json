@@ -1,0 +1,38 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§l§b[Why Not] §r§fTrailing Trails§r",
+        "description": "Adds nice trailing particles behind players.",
+        "uuid": "3b53be31-a5f5-4fa7-92f8-e6075e151ee0",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 26, 20]
+    },
+    "metadata": {
+        "product_type": "addon"
+    },
+    "modules": [
+        {
+            "description": "Trailing Trails Behavior Pack Module",
+            "type": "data",
+            "uuid": "784b445f-4fce-4176-b461-6cfe50e400a7",
+            "version": [1, 0, 0]
+        },
+        {
+            "description": "Trailing Trails Script Module",
+            "type": "script",
+            "uuid": "d5b352ac-c3cc-4f5b-b54e-fff2b7ddb35b",
+            "version": [1, 0, 0],
+            "entry": "scripts/main.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "de92ecec-6627-45c1-a04b-516b769eb4cb",
+            "version": [1, 0, 0]
+        },
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.7.0"
+        }
+    ]
+}
