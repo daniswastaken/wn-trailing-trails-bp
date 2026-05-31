@@ -1,7 +1,7 @@
 {
     "format_version": 2,
     "header": {
-        "name": "§l§b[Why Not] §r§fTrailing Trails§r",
+        "name": "§l§6[Why Not] §r§fTrailing Trails§r",
         "description": "Adds nice trailing particles behind players.",
         "uuid": "3b53be31-a5f5-4fa7-92f8-e6075e151ee0",
         "version": [1, 0, 0],
